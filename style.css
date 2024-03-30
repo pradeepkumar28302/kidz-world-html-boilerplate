@@ -1,177 +1,333 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Rubik:wght@400;600&display=swap");
-
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  font-family: "Rubik", sans-serif;
+nav {
+  margin: .8vw 5vw;
+  display: flex;
+  justify-content: space-between;
 }
 
-.books {
-  max-width: 200px;
+#logo {
+  width: 12vw;
 }
 
-.games,
-.crafts {
-  max-width: 300px;
+.add_to_Cart {
+  display: flex;
+  align-items: center;
 }
 
-.flex {
+#cart {
   display: flex;
 }
 
-.section-container {
-  flex-direction: column;
-  padding: 5%;
+.cart_items {
+  width: 3vw;
 }
 
-.space-between {
+.add_to_Cart:hover {
+  cursor: pointer;
+}
+
+.no_of_items {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.background_img {
+  max-width: 100%;
+}
+
+.have_fun {
+  display: flex;
+}
+
+.text_image {
+  position: absolute;
+  top: 7rem;
+  left: 4.7rem;
+  font-size: 3vw;
+  color: white;
+  font-weight: 100;
+}
+
+.smalltext {
+  margin-top: 1.6rem;
+  font-size: 1.7rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+#two {
+  margin: 4.5vw;
+}
+
+.books_heading {
+  font-size: 1.6rem;
+  margin-top: 9.8rem;
+}
+
+.name, #price {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+.writer {
+  color: rgb(143, 140, 140);
+  font-weight: lighter;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: .7vw 0vw 2vw auto;
+  font-size: larger;
+}
+
+.items_set {
+  display: flex;
+  justify-content: space-between;
+  padding-top: .7rem;
+}
+
+.items_set img{
+  width: 15vw;
+}
+
+#buying img {
+  width: 3vw;
+}
+
+#book_id {
+  padding: .13vw;
+}
+
+#buying:hover {
+cursor: pointer;
+}
+
+#buying {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.space-evenly {
-  justify-content: space-evenly;
-}
-
-nav {
-  height: 50px;
-  width: 100%;
-}
-
-nav>div {
-  padding: 0% 5%;
-}
-
-nav img {
-  height: 30px;
-}
-
-#cart {
-  font-weight: bold;
+#cart1 {
+  background-color: rgb(63, 158, 196);
+  display: flex;
   align-items: center;
-}
-
-header {
-  height: 500px;
-  width: 100%;
-  background-image: url("./assets/kw-background.png");
-  background-size: 100% 100%;
   color: white;
+  border-radius: 6px;
+  font-size: 1.4vw;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: .3vw;
 }
 
-.header-text {
-  flex-direction: column;
-  max-height: 100%;
-  max-width: 20%;
-  padding: 4% 5%;
+#cart1 img {
+  width: 2.1vw;
+  padding: 0.4vw;
 }
 
-header h1 {
-  font-size: 7vh;
+.game_heading {
+  font-size: 1.6rem;
+  margin-top: 9.8rem;
 }
 
-header h5 {
-  font-size: 23px;
-  margin-top: 20px;
+.items_games {
+  display: flex;
+  justify-content: space-between;
+  padding-top: .7rem;
 }
 
-.section {
-  margin: 4% 0%;
+.items_games img{
+  width: 22vw;
 }
 
-.button {
-  cursor: pointer;
-  background-color: #6095ff;
-  color: white;
-  padding: 7px;
-  border-radius: 4px;
+.naming_games {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.buy img {
-  width: 20px;
-  padding-left: 5px;
+.handmades_heading {
+  font-size: 1.6rem;
+  margin-top: 9.8rem;
 }
 
-.buy {
-  margin-top: 15px;
-  padding-bottom: 50px;
+.naming_handmades {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 footer {
-  /* max-height: 300px; */
-  background-image: url("http://i1.faceprep.in/prograd-junior/footer-bg.png");
-  background-size: 100% 100%;
+  background-color: black;
   color: white;
-  padding: 0% 5%;
+  height: 14vw;
+  display: flex;
+  justify-content: space-between;
 }
 
-footer img {
-  height: 150px;
-  width: 150px;
+.footer {
+  margin-left: 5vw;
+  margin-top: .5vw;
+  font-size: 2vw;
+}
+
+.footer p{
+  padding: .5vw;
+  font-size: 1.5vw;
+}
+
+.footer img {
+  margin-top: .5vw;
+  width: 9vw;
+  height: 9vw;
   border-radius: 50%;
 }
 
-#details {
-  flex-direction: column;
+.text {
   text-align: right;
+  font-size: 1.3vw;
+  padding: 3vw;
 }
 
-h1,
-h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
+.text h3{
+  margin-bottom: 1vw;
 }
 
-h4 {
-  color: grey;
-  font-weight: lighter;
-}
-
-h6 {
-  font-size: 17px;
-}
-
-.buy p {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-h3,
-h2 {
-  margin-bottom: 10px;
-}
-
-.container {
-  flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-    height: 200px;
-    font-size: 15px;
-    text-align: start;
+@media only screen and (orientation: portrait) {
+  nav {
+      height: 8vw;
   }
 
-  header h1 {
-    font-size: 4vh;
+  #logo {
+      margin-top: 1.5vw;
+      width: 32vw;
   }
 
-  header h5 {
-    font-size: 15px;
+
+  .cart_items {
+      width: 7vw;
   }
 
-  .header-text {
-    padding: 0% 60% 5% 5%;
+  #cart {
+      font-size: 2rem;
+      display: block;
   }
 
-  body {
-    text-align: center;
+  .no_of_items {
+      font-size: 2vw;
   }
 
-  .container {
-    justify-content: center;
+  .text_image {
+      position: absolute;
+      top: 17vw;
+      left: 7vw;
+      font-size: 4.5vw;
+  }
+  
+  .smalltext {
+      margin-top: 1.5vw;
+      font-size: 2.5vw;
+  }
+
+  .have_fun {
+      display: block;
+  }
+
+  .items_set, .items_games {
+      display: block;
+      padding-top: .7rem;
+  }
+
+  .books_heading, .game_heading, .handmades_heading {
+      font-size: 8vw;
+      text-align: center;
+  }
+
+  #book_id {
+      margin: auto;
+      max-width: fit-content;
+      margin-bottom: 12vw;
+  }
+
+  .items_set img{
+      width: 50vw;
+  }
+  
+  #buying img {
+      width: 7vw;
+  }
+
+  .books_heading {
+      margin-top: 3rem;
+  }
+
+  .name, .writer, .naming_handmades {
+      text-align: center;
+      font-size: 5vw;
+  }
+
+  #cart1 {
+      width: 18vw;
+      font-size: 4vw;
+      padding: .8vw;
+  }
+
+  #price {
+      font-size: 5vw;
+  }
+
+  .items_games img{
+      width: 75vw;
+      margin-top: 1vw;
+  }
+
+  .naming_games, .writer {
+      text-align: center;
+      font-size: 6vw;
+  }
+
+  .naming_handmades {
+      font-size: 6vw;
+  }
+
+  footer {
+      height: 30vw;
+  }
+
+  .footer {
+      margin-left: 7vw;
+      margin-top: 3vw;
+      font-size: 15vw;
+  }
+  
+  .footer p{
+      padding: .5vw;
+      font-size: 4vw;
+  }
+  
+  .footer img {
+      margin-top: 1vw;
+      width: 18vw;
+      height: 18vw;
+  }
+  
+  .text {
+      text-align: right;
+      font-size: 3vw;
+      padding: 5vw;
+      margin-top: 3vw;
+  }
+  
+  .text h3{
+      margin-bottom: 2vw;
+  }
+  
+}
+
+@media only screen and (max-width: 945px){
+  .background_img {
+      height: 50vw;
   }
 }
